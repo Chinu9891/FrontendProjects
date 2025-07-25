@@ -14,6 +14,9 @@ body {
     font-family: sans-serif;
 }
 
+header {
+    text-align: center;
+}
 
 header h1 {
     color: #A480F2;
@@ -23,16 +26,12 @@ header h1 {
 header p {
     color: #595B5C;
     font-size: 13px;
+    margin-top: 12px;
 }
 
 .main-container {
     padding: 20px;
-    width: 600px;
-}
-
-.main-container header {
-    text-align: center;
-    margin-bottom: 6px;
+    width: 650px;
 }
 
 .search-container {
@@ -91,6 +90,13 @@ header p {
     background: rgba(255, 255, 255, 0.1);
 }
 
+.profile-detailed {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
 .stat {
     color: white;
     background-color: #333233;
@@ -98,7 +104,17 @@ header p {
     text-align: center;
     border-radius: 8px;
     width: 33%;
-    font-size: 14px;
+    font-size: 13px;
+}
+
+#view-profile {
+    background-color: #A480F2;
+    color: black;
+    border-style: none;
+    padding: 10px 10px;
+    border-radius: 20px;
+    font-weight: 700;
+    width: 100px;
 }
 
 .profile-info {
@@ -107,5 +123,63 @@ header p {
 
 .location-joined {
     display: flex;
+    justify-content: space-between;
     gap: 10px;
+    font-size: 14px;
+}
+
+.occupation-social {
+    margin-left: 24px;
+    margin-top: 12px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 120px;
+    font-size: 12px;
+    color: white;
+}
+
+.repo-container {
+    padding-bottom: 16px;
+    margin-top: 20px;
+}
+
+h3 {
+    position: relative;
+    padding-bottom: 8px;
+    color: white;
+}
+
+h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.repo-grid {
+    margin-top: 8px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+.grid-item {
+    background-color: #333233;
+    border-radius: 6px;
+    min-height: 100px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.repo-details {
+    display: flex;
+    font-size: 12px;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 20px;
 }
