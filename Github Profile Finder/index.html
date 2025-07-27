@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <title>Github User Finder</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     
@@ -25,27 +26,27 @@
                 </div>
 
                 <div class="profile-detailed">
-                    <h2>Burak</h2>
-                    <p>@burakorkmez</p>
-                    <p>formerly As a Programmer</p>
+                    <h2 id="name">Burak</h2>
+                    <p id="additional-name">@burakorkmez</p>
+                    <p id="description">formerly As a Programmer</p>
                     <div class="location-joined">
-                        <p>Not specified</p>
-                        <p>Joined Dec 1, 2020</p>
+                        <p><i class="fas fa-map-marker-alt"></i><span>Not specified</span></p>
+                        <p><i class="fa-solid fa-calendar-days"></i><span>Joined Dec 1, 2020</span></p>
                     </div>
                     <button id="view-profile">View Profile</button>
                 </div>
             </div>
 
             <div class="profile-stats">
-                <div class="stat">2075 followers</div>
-                <div class="stat">0 following</div>
-                <div class="stat">40 repositories</div>
+                <div class="stat"><i class="fa-solid fa-users"></i><span>2075 followers</span></div>
+                <div class="stat"><i class="fas fa-user-friends"></i><span>0 following</span></div>
+                <div class="stat"><i class="fa-solid fa-code-branch"></i><span>40 repositories</span></div>
             </div>
 
             <div class="occupation-social">
-                <p>Not specified</p>
-                <p>codesistency.io</p>
-                <p>@codesistency</p>
+                <p class="social"><i class="fa-solid fa-building"></i> <span>Not specified</span></p>
+                <p class="social"><i class="fa-solid fa-link"></i> <span>codesistency.io</span></p>
+                <p class="social"><i class="fa-brands fa-twitter"></i> <span>@codesistency</span></p>
             </div>
             
             <div class="repo-container">
@@ -72,6 +73,7 @@
                             <p>Date updated</p>
                         </div>
                     </div>
+                    
                 </div>
             </div>
 

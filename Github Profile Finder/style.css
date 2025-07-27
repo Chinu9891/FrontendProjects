@@ -20,42 +20,41 @@ header {
 
 header h1 {
     color: #A480F2;
-    font-size: 28px;
+    
 }
 
 header p {
     color: #595B5C;
-    font-size: 13px;
-    margin-top: 12px;
+    font-size: 17px;
+    margin-top: 14px;
 }
 
 .main-container {
-    padding: 20px;
-    width: 650px;
+    min-width: 800px;
 }
 
 .search-container {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     margin-top: 22px;
+    column-gap: 10px;
 }
 
 .search-container input {
     background-color: #252524;
     border-radius: 8px;
     width: 100%;
-    padding: 8px;
+    padding: 12px 16px;
     border-style: none;
 }
 
 .search-container button {
     border-radius: 8px;
-    border-width: 1px;
+    border-style: none;
     color: black;
     background-color: #A480F2;
     font-weight: 600;
-    padding: 8px 14px;
-    margin-left: 6px;
+    padding: 0 20px;
 
 }
 
@@ -67,17 +66,18 @@ header p {
     display: flex;
     flex-direction: column;
     background-color: #252524;
-    padding: 18px;
+    padding: 25px;
     border-radius: 8px;
 }
 
 .profile-stats {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding-bottom: 16px;
   position: relative;
-  gap: 10px;
   margin-top: 20px;
+  column-gap: 15px;
+  line-height: 25px;
 }
 
 .profile-stats::after {
@@ -90,21 +90,52 @@ header p {
     background: rgba(255, 255, 255, 0.1);
 }
 
-.profile-detailed {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-
 .stat {
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
     color: white;
     background-color: #333233;
-    padding: 10px 8px;
+    padding: 12px;
     text-align: center;
     border-radius: 8px;
-    width: 33%;
-    font-size: 13px;
+}
+
+.stat i {
+    margin-right: 0.5rem;
+    color: #A480F2;
+}
+
+.profile-detailed {
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    gap: 1rem;
+}
+
+#name {
+    color: white;
+}
+
+#additional-name {
+    color: #A480F2;
+}
+
+#description{
+    color: white;    
+}
+
+.location-joined {
+    display: flex;
+    gap: 1rem;
+    font-size: 15px;
+    color: rgb(156, 163, 175);
+}
+
+.location-joined i {
+    margin-right: 5px;
 }
 
 #view-profile {
@@ -119,23 +150,21 @@ header p {
 
 .profile-info {
     display: flex;
-}
-
-.location-joined {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    font-size: 14px;
+    column-gap: 25px;
 }
 
 .occupation-social {
-    margin-left: 24px;
     margin-top: 12px;
     display: flex;
     justify-content: flex-start;
-    gap: 120px;
-    font-size: 12px;
-    color: white;
+    column-gap: 150px;
+    font-size: 14px;
+    color: rgb(156, 163, 175);
+}
+
+.social i {
+    color: #A480F2;
+    margin-right: 0.5rem;
 }
 
 .repo-container {
@@ -145,7 +174,7 @@ header p {
 
 h3 {
     position: relative;
-    padding-bottom: 8px;
+    padding-bottom: 14px;
     color: white;
 }
 
@@ -160,7 +189,7 @@ h3::after {
 }
 
 .repo-grid {
-    margin-top: 8px;
+    margin-top: 12px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 8px;
